@@ -21,7 +21,7 @@ export default function Login() {
 
         <div className='bg-orange-500 flex flex-col justify-center'>
             <form className='max-w-[400px] w-full mx-auto bg-blue p-4'>
-                <h2 className='text-4xl font-bold text-center py-6'>Kahoot</h2>
+                <h2 className='text-4xl font-bold text-center py-6'>THE DISCUSSING QUIZ</h2>
                 <div className='flex flex-col py-2'>
                     <label>Username</label>
                     <input className='border p-2' type="text" />
