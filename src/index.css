@@ -15,3 +15,110 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.App {
+  height: 100vh;
+  background-color:rgb(238, 200, 151);
+}
+a{
+  text-decoration: none;
+  font-weight: bolder;
+  font-style: italic;
+  color: rgb(28, 25, 48);
+}
+header {
+  padding: 1%;
+  background-color: rgb(238, 200, 151);
+}
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 1ch;
+  font-size: medium;
+  width: fit-content;
+}
+.logout{
+  background-color: red;
+  color: #fafafa;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left:1em;
+  margin-right: 1em;
+}
+
+.userstate{
+  width: 60vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.user-details{
+  margin-right: 1em;
+}
+
+.error{
+  border: 1px solid red;
+  border-radius: 5px;
+  padding:2%;
+}
+
+
+
+
+
+.main-container {
+  background-color: antiquewhite;
+  padding: 1%;
+}
+
+.main-container h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.member{
+  display: flex;
+  width: 70%;
+  margin:0 auto;
+}
+
+.userlinks {
+  display:flex;
+  justify-content: space-between;
+  padding: 1%;
+  margin-right: 20%;
+  margin-left: 20%; 
+}
+
+.userlinks a:hover {
+  font-style: italic;
+}
+
+/* FORUM */
+.forum-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 50px;
+}
+
+.forum-form{
+  display: grid;
+  justify-items: center;
+  gap: 0.5em;
+}
+.forum-form h3{
+  padding: 0;
+  margin-bottom:0.6em;
+}
+.forum-form input, textarea {
+  width: 100%;
+}

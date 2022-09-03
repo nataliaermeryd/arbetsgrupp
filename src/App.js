@@ -1,24 +1,32 @@
-import "./App.css";
-import Login from "./pages/Login";
-import Signup from "./pages/Signup";
-import Landingpage from "./pages/Landingpage";
-import Dashboard from "./pages/Dashboard";
-import Blogposts from "./pages/Blogposts";
-import Quizgame from "./pages/Quizgame";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { useAuthContext } from "./P-Hooks/useAuthContext";
+
+import Home from "./P-pages/Home";
+import SignIn from "./P-pages/SignIn";
+import SignUp from "./P-pages/SignUp";
+import Profile from "./P-pages/Profile"
+import Forum from "./P-pages/Forum";
+import Navbar from "./P-Components/Navbar";
 
 function App() {
+  const { user } = useAuthContext();
+
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/Signup" element={<Signup />} />
-        <Route path="/landingpage" element={<Landingpage />} />
-        <Route path="/Blogposts" element={<Blogposts />} />
-        <Route path="/Quizgame" element={<Quizgame />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-      </Routes>
-    </Router>
+    <div className="App">
+      <BrowserRouter>
+      <Navbar/>
+        <div className="allPages">
+          <Routes>
+            <Route path="/" element={!user ? <Home/> : <Navigate to="/mypage" />}/>
+            <Route path="/mypage" element={user ? <Profile /> : <Navigate to="/" />} />
+            <Route path="/forum" element={user ? <Forum/> : <Navigate to="/" />}  />
+            <Route path="/signin" element={!user ? <SignIn /> : <Navigate to="/mypage"/> } />
+            <Route path="/signup" element={!user ? <SignUp /> : <Navigate to="/mypage"/>} />
+            
+          </Routes>
+        </div>
+      </BrowserRouter>
+    </div>
   );
 }
 
