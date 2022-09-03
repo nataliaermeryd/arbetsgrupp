@@ -12,7 +12,7 @@ export default function Landingpage() {
         <div><h2 className='text-4xl font-bold text-center py-6'>WANNA PLAY A GAME?</h2></div>
       </div></Link>
       
-      <Link to="/Blogposts"><div className='bg-white w-full h-full object-cover pt-60 pb-60 border-gray-200 border-4 p-8'>
+      <Link to="/Forumhome"><div className='bg-white w-full h-full object-cover pt-60 pb-60 border-gray-200 border-4 p-8'>
         <h2 className='text-4xl font-bold text-center py-6'>DISCUSS WITH MEMBERS?</h2>
         </div></Link>
 
