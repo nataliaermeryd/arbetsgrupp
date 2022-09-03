@@ -1,11 +1,14 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-
+import background from '../assets/forum-background.jpg'
+// syntax to add background image 
+// style={{ backgroundImage: `url(${background})`}}
 
 export default function ForumHome() {
   return (
-    <div>
-      <p>1. background picture</p>
+    <div className="bg-cover bg-center" style={{ backgroundImage: `url(${background})`}}>
+      <div className='text-2xl font-semibold'>
+
       <p>2. nice logo</p>
       <p>3. welcome text "Let's talk some shit"</p>
       
@@ -16,6 +19,8 @@ export default function ForumHome() {
       <p>8. link to main page (choose kahoot or forum)</p>
       <p>9. footer with info (social media, kontakt, logo)</p>
       <p>10. scroll to top of page on every topic page</p>
-    </div>
+      </div>
+  </div>
+    
   )
 }
