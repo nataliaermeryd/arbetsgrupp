@@ -46,29 +46,38 @@ const CreateForumpost = () => {
   
 
   return (
-    <div>
+        <div>
     <form className="forum-form" onSubmit={handleSubmit}>
-      <h3>Add a post to the forum:</h3>
-      <input
+        <div class="h-auto w-auto rounded-md bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-[2px]">
+          <div class="h-auto w-auto bg-white">
+        <input
+        class="w-full text-center"
         id="forumpost"
         type="text"
         name="title"
-        placeholder="Title of post"
+        placeholder="SUBJECT OF YOUR DISCUSSION"
         onChange={(e) => setTitle(e.target.value)}
         value={title}
-      />
-
+            />
+          </div>
+        </div>
+      <p class="h-[5px]"/>
+    <div class="h-auto w-auto rounded-md bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-[2px]">
+    <div class="h-auto w-auto bg-white">
       <textarea
+        class="w-full h-full text-center"
         id="forumpost"
         type="textarea"
         name="text"
-        placeholder="Your text goes here :) "
+        placeholder="What's on your mind? :) "
         onChange={(e) => setText(e.target.value)}
         value={text}
-      />
+            />
+      </div>
+    </div>
   
 
-      <button type="submit">Submit post</button>
+      <button type="submit">DISCUSS</button>
       {error && <div className="error">{error}</div>}
     </form>
     </div>

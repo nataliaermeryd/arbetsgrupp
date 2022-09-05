@@ -30,25 +30,41 @@ export function ShowForumposts() {
   };
 
   return (
-    <main className="main-container">
-    <Link to="/mypage">Back to profile</Link>
-    <h1>This is the Forum</h1>
-    <div className="forum-container">
-      <CreateForumpost />
-      <div className="posts">
-          <h3>Forumposts:</h3>
-      <ul>
-        {forumposts.map((forumpost) => (
-          <PostDetails
-            key={forumpost._id}
-            forumpost={forumpost}
-            deletePost={deletePost}
-          />
-        ))}
-      </ul>
-    </div>
-    </div>
-    </main>
+      
+    <section class='sticky items-center m-auto w-full p-4 bg-coolGray-800 pb-[90px]'>
+        <div class='grid-cols-2 gap-y-4 sm:grid-cols-2 w-full rounded-3xl items-center'>
+          
+          <div
+            className="posts"
+            class="
+            bg-white bg-opacity-60 w-full object-cover 
+            border-gray-200 border-2 rounded-3xl border-dashed p-8
+            text-center h-full bg-opacity-80
+            ">
+              <h3 class="font-bold">DISCUSSIONS</h3>
+          <ul>
+            {forumposts.map((forumpost) => (
+              <PostDetails
+                key={forumpost._id}
+                forumpost={forumpost}
+                deletePost={deletePost}
+              />
+            ))}
+            </ul>
+        </div>
+        
+            <div
+            className="forum-container"
+            class=" 
+            bg-white bg-opacity-60 w-full object-cover 
+            border-gray-200 border-2 rounded-3xl border-dashed p-8
+            text-center h-full bg-opacity-80
+            ">
+            <CreateForumpost />
+          </div>
+    
+        </div>
+      </section>
   );
 }
 
