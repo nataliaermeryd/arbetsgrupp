@@ -1,4 +1,4 @@
-import {ForumContext } from "../P-Context/ForumContext";
+import { ForumContext } from "../P-Context/ForumContext";
 import { useContext } from "react";
 
 export const useForumContext =() => {

@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <header>
-      <div className="navbar bg-white bg-opacity-60 border-t border-b border-dashed border-gray-300 shadow">
+      <div className="navbar bg-white pl-1 pr-3 border-t border-b border-dashed border-gray-300 shadow">
         <Link to="/" class="cursor-pointer">
           <img src={Logo} style={{ height: 70 }} alt="logo" />
         </Link>
@@ -40,8 +40,9 @@ const Navbar = () => {
           <Link to="/signin" class="cursor-pointer">
                 <h1
                   class="
-                  text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-200
-                  hover:from-purple-200 hover:to-blue-600"
+                  text-[17px] text-transparent bg-clip-text 
+                  bg-gradient-to-r from-blue-600 to-purple-200
+                  hover:from-purple-200 hover:to-blue-600 hover:text-[18px]"
                 >
                   SIGN IN ⟫
                 </h1>

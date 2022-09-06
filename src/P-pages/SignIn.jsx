@@ -1,19 +1,18 @@
 import { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import { useLogIn } from "../P-Hooks/useLogIn";
+import { useNavigateBack } from "../P-Hooks/useNavigateBack";
 
 
 const SignIn = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const { logIn, error, loading } = useLogIn();
+  const { navigateBack } = useNavigateBack();
 
   const navigate = useNavigate();
   const navigateToSignup = () => {
     navigate('/Signup');
-  };
-    const navigateBack = () => {
-    navigate(-1);
   };
 
   const handleSubmit = async (e) => {
@@ -23,16 +22,18 @@ const SignIn = () => {
   };
   return (
 
-    <section class='sticky top-0 left-0 right-0 bottom-0 flex items-center w-full h-full p-4 bg-coolGray-800 bg-opacity-80'>
+    <section
+      id="handleMiddle"
+      class='sticky top-0 left-0 right-0 bottom-0 flex items-center w-full h-full p-4 bg-coolGray-800 bg-opacity-80'>
       <div class='max-w-lg w-full m-auto p-8 bg-white rounded-3xl border-2 border-dashed gray-200'>
 
         <p
-          class='
+          class='absolute 
           font-bold text-gray-400 text-[24px]
           cursor-pointer
-          hover:text-[28px] hover:text-gray-300'
+          hover:text-[26px] hover:text-gray-300'
           type='click'
-          onClick={navigateBack}
+          onClick={ navigateBack }
         >
           ⟪
         </p>
@@ -40,7 +41,14 @@ const SignIn = () => {
         <form class='p-7 bg-coolGray-50 rounded-2xl text-center' onSubmit={handleSubmit}>
           
           <hr />
-          <h2 class='text-3xl text-blue-400 font-bold text-center pt-3 pb-3'>SIGN IN</h2>
+          <h2
+            class='
+            text-3xl font-bold text-center pt-3 pb-3
+            text-transparent bg-clip-text 
+            bg-gradient-to-r from-blue-400 to-purple-300
+          '>
+            SIGN IN
+          </h2>
           <hr class="pb-2" />
           <div class='flex flex-col py-2'>
             <input
@@ -69,7 +77,10 @@ const SignIn = () => {
           <hr />
 
           <button
-            class='border rounded-xl w-full my-3 py-2 bg-indigo-500 hover:bg-indigo-200 text-white'
+            class='
+            border rounded-xl w-full my-3 py-2 text-white
+            bg-gradient-to-r from-indigo-400 to-purple-200 text-white
+            hover:from-indigo-100 hover:to-purple-100'
             type="submit"
             disabled={loading}
             ><b>
