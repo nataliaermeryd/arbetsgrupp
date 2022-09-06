@@ -4,7 +4,9 @@ const Home = () => {
   return (
     
     <section class='sticky top-0 left-0 right-0 bottom-0 flex items-center m-auto w-full p-4 bg-coolGray-800 bg-opacity-80'>
-      <div class='grid grid-cols-1 sm:grid-cols-2 gap-4 w-full m-auto items-center'>
+      <div
+        id="handleMiddle"
+        class='grid grid-cols-1 sm:grid-cols-2 gap-4 w-full m-auto items-center'>
 
         <Link to="/Signin">
           <div

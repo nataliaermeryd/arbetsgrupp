@@ -8,6 +8,7 @@ import Profile from "./P-pages/Profile";
 import Forum from "./P-pages/Forum";
 import Navbar from "./P-Components/Navbar";
 import Footer from "./P-Components/Footer";
+import Quiz from "./P-pages/Quiz";
 
 function App() {
   const { user } = useAuthContext();
@@ -29,6 +30,10 @@ function App() {
             <Route
               path="/forum"
               element={user ? <Forum /> : <Navigate to="/" />}
+            />
+            <Route
+              path="/quiz"
+              element={user ? <Quiz /> : <Navigate to="/" />}
             />
             <Route
               path="/signin"

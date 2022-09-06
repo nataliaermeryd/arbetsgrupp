@@ -26,7 +26,7 @@ code {
 
 .App {
   margin: auto;
-  padding-top: 2px;
+
 }
 
 header {
@@ -91,15 +91,16 @@ button {
 
 .navbar{
   display: flex;
+  position: fixed;
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  z-index: 1;
 }
 
 .userstate{
   display: flex;
   justify-content: flex-end;
-  padding-right: 10px;
 }
 
 FORUM 
@@ -111,6 +112,7 @@ FORUM
 
 .forum-form{
   display: grid;
+  width: 100%;
   justify-items: center;
   gap: 0.5em;
 }
@@ -119,5 +121,30 @@ FORUM
   margin-bottom:0.6em;
 }
 .forum-form input, textarea {
-  width: 100%;
+  width: 50vw;
+  font-size: larger;
+
+
+}
+
+#textShadow {
+  text-shadow: 1px 1px 3px #00000034;
+}
+
+#quizCommingSoon {
+background-color: #fafafa65;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 84vh;
+text-align: center;
+align-items: center;
+
+text-shadow: 1px 1px 3px #00000034;
+}
+
+#handleMiddle {
+height: 96vh;
+padding-top: 70px;
+padding-bottom: 70px;
 }

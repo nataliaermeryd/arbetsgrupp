@@ -8,7 +8,7 @@ export default function Footer() {
 
     <footer
       class="
-      fixed bottom-0 left-0 z-20 p-4 w-full bg-white 
+      fixed bottom-0 left-0 z-20 p-4 w-full bg-white h-[70px]
       bg-opacity-90 border-t border-b border-dashed border-gray-300
       shadow md:flex md:items-center md:justify-between md:p-6 
       dark:
