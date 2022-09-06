@@ -45,7 +45,7 @@ export function ShowForumposts() {
             text-center pb-20
             ">
         <p
-          class='absolute text-left
+          class='fixed text-left
           font-bold text-gray-400 text-[24px]
           cursor-pointer p-2
           hover:text-[26px] hover:text-gray-300'
