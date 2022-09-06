@@ -56,3 +56,18 @@ Git clone repositary and start coding.
 [React-url]: https://reactjs.org/
 
 
+
+<details>
+<summary>Table of Contents</summary>
+<ol>
+| Frameworks | Links |
+| ------ | ------ |
+| Github Repo | [FRONTEND - Repository theDiscussingQuiz](https://github.com/nataliaermeryd/thediscussingquiz/) |
+| GitHub Repo | [BACKEND - Repository gruppsarbete-backend](https://github.com/sararazm/gruppsarbete-backend/) |
+| Trello Agile/Scrum | [Trello Board SPERN](https://trello.com/b/Dc9IJTCG/grupp-1-spern) |
+| OneDrive | [plugins/onedrive/README.md][PlOd] |
+| Medium | [plugins/medium/README.md][PlMe] |
+| Google Analytics | [plugins/googleanalytics/README.md][PlGa] |
+</ol>
+</details>
+
