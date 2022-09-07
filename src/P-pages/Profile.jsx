@@ -5,7 +5,7 @@ const Profile =()=> {
 
 return (   
           
-    <section class='fixed flex items-center w-full p-4 bg-coolGray-800 bg-opacity-80'>
+    <section class='sticky flex items-center w-full p-4 bg-coolGray-800 bg-opacity-80'>
         <div
             id="handleMiddle"
             class='grid grid-cols-1 sm:grid-cols-2 gap-4 w-full m-auto rounded-3xl items-center
