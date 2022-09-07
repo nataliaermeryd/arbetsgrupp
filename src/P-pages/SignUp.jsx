@@ -23,14 +23,7 @@ const SignUp = () => {
             onChange={(e) => setEmail(e.target.value)}
             value={email}
           />
-          {/*
-          <label>Username:</label>
-          <input
-            type="text"
-            onChange={(e) => setUsername(e.target.value)}
-            value={username}
-          />
-          */}
+         
           <label>Password: </label>
           <input
             type="password"

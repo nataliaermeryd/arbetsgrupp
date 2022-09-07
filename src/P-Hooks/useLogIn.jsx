@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useAuthContext } from "./useAuthContext";
-import axios from "axios";
+
 export const useLogIn = () => {
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(null);
@@ -8,15 +8,16 @@ export const useLogIn = () => {
 
 
   const logIn = async (email, password) => {
-    axios.defaults.baseURL = "http://localhost:3030/api";
     setLoading(true);
     setError(null);
 
-    const response = await axios.post("/user/signin", {
+    const response = await fetch("http://localhost:3030/api/user/signin", {
+      method: "POST",
       headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email, password }),
     });
 
-    const json = response.data;
+    const json = await response.json();
 
     if (!response.ok) {
       setLoading(false);
