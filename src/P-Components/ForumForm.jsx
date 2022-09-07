@@ -1,4 +1,4 @@
-import {  useState } from "react";
+import { useState } from "react";
 import axios from "axios";
 import { useAuthContext } from "../P-Hooks/useAuthContext";
 import { useForumContext } from "../P-Hooks/useForumContext";
@@ -10,7 +10,6 @@ const CreateForumpost = () => {
   const [error, setError] = useState(null);
   const [title, setTitle] = useState("");
   const [text, setText] = useState("");
-  
   
   const handleSubmit = async (event) => {
     axios.defaults.baseURL = "http://localhost:3030/api";
@@ -50,30 +49,46 @@ const CreateForumpost = () => {
 
   return (
     <div>
-    <form className="forum-form" onSubmit={handleSubmit}>
-      <h3>Add a post to the forum:</h3>
-      <input
-        id="forumpost"
-        type="text"
-        name="title"
-        placeholder="Title of post"
-        onChange={(e) => setTitle(e.target.value)}
-        value={title}
-      />
+        <form className="forum-form" onSubmit={handleSubmit}>
+            <div class="rounded-md bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-[2px]">
+              <div class="h-auto bg-white">
+            <input
+            class="text-center"
+            id="forumpost"
+            type="text"
+            name="title"
+            placeholder="SUBJECT OF DISCUSSION"
+            onChange={(e) => setTitle(e.target.value)}
+            value={title}
+                />
+              </div>
+            </div>
+          <p class="h-[5px]" />
+        <div class="h-auto w-auto rounded-md bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-[2px]">
+        <div class="h-auto w-auto bg-white">
+          <textarea
+            class="text-center "
+            id="forumpost"
+            type="textarea"
+            name="text"
+            placeholder="What's on your mind? :) "
+            onChange={(e) => setText(e.target.value)}
+            value={text}
+                />
+          </div>
+        </div>
+      
 
-      <textarea
-        id="forumpost"
-        type="textarea"
-        name="text"
-        placeholder="Your text goes here :) "
-        onChange={(e) => setText(e.target.value)}
-        value={text}
-      />
-  
-
-      <button type="submit">Submit post</button>
-      {error && <div className="error">{error}</div>}
-    </form>
+        <button
+          class="font-bold sticky text-[18px] hover:text-[19px]
+          text-transparent bg-clip-text 
+          bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500
+          hover:to-pink-500 hover:via-red-500 hover:from-yellow-500"
+          type="submit">
+          ⟫ DISCUSS ⟪
+        </button>
+          {error && <div className="error">{error}</div>}
+        </form>
     </div>
   );
 };

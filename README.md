@@ -1,19 +1,32 @@
-# arbetsgrupp
+# TTFHW - Frontend
+[![N|Solid](https://raw.githubusercontent.com/nataliaermeryd/thediscussingquiz/main/src/assets/LOGOTDQ.png)](http://thediscussingquiz.herokuapp.com/)
 
-### Petras försök
-
-```mermaid
-sequenceDiagram
-	actor User
-	participant ClientApp
-	participant API/Backend
-
-	User->>ClientApp: Enter Username and password
-	ClientApp->>API/Backend: Send request
-		API/Backend->>API/Backend: Generate JWT
-	
-	API/Backend->>ClientApp: Return the generated JWT
-	ClientApp->>User:Allow access to token required area
-	User->>ClientApp: User navigates on restricted area
-	ClientApp->>API/Backend: JWT is sent and token is checked
+---
+### LADDA NER REPO
+> FRONTEND:
+> https://github.com/nataliaermeryd/thediscussingquiz
+>
+> BACKEND:
+> https://github.com/sararazm/gruppsarbete-backend
+---
+> ÖPPNA TERMINALEN
+>
+> För att ladda ner alla dependencies - KÖR:
+```sh
+npm i
 ```
+> För att starta applikationen - KÖR:
+```sh
+npm start
+```
+---
+# ONBOARDING
+| Frameworks | Links |
+| ------ | ------ |
+| Github Repo | [FRONTEND - Repository theDiscussingQuiz](https://github.com/nataliaermeryd/thediscussingquiz/) |
+| GitHub Repo | [BACKEND - Repository gruppsarbete-backend](https://github.com/sararazm/gruppsarbete-backend/) |
+| Trello Agile/Scrum | [Trello Board SPERN](https://trello.com/b/Dc9IJTCG/grupp-1-spern) |
+| framework | [link]() |
+| framework | [link]() |
+| framework | [link]() |
+---
