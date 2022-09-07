@@ -30,7 +30,10 @@ const CreateForumpost = () => {
           'Authorization': `Bearer ${user.token}`
         }
       })
-      const json = await response.json()
+
+      console.log(response)
+      const json = response.data;
+      
       if(!response.ok){
         setError(json.error)
     }
