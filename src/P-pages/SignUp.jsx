@@ -16,7 +16,6 @@ const SignUp = () => {
 
 
   return (
-
     <section
       id="handleMiddle"
       class='sticky top-0 left-0 right-0 bottom-0 flex items-center w-full h-full p-4 bg-coolGray-800 bg-opacity-80'>
