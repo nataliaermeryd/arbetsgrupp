@@ -8,7 +8,7 @@ const Home = () => {
         id="handleMiddle"
         class='grid grid-cols-1 sm:grid-cols-2 gap-4 w-full m-auto items-center'>
 
-        <Link to="/Signin">
+        <Link id="signIn" to="/Signin">
           <div
             class='
             group
@@ -36,7 +36,7 @@ const Home = () => {
         </div>
         </Link>
       
-        <Link to="/Signup">
+        <Link id="signUp" to="/Signup">
           <div
             class='
             group
@@ -64,6 +64,7 @@ const Home = () => {
         </div>
         </Link>
 
+    
     </div>
   </section>
   );

@@ -86,6 +86,7 @@ const SignUp = () => {
           <hr class="pb-1"/>
           
           <button
+            id="signUp"
             class='
             border rounded-xl w-full my-3 py-2
             bg-gradient-to-r from-red-400 to-pink-200 text-white

@@ -77,6 +77,7 @@ const SignIn = () => {
           <hr />
 
           <button
+            id="signIn"
             class='
             border rounded-xl w-full my-3 py-2 text-white
             bg-gradient-to-r from-indigo-400 to-purple-200 text-white
