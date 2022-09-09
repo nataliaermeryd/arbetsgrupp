@@ -2,7 +2,7 @@
 [![N|Solid](https://raw.githubusercontent.com/nataliaermeryd/thediscussingquiz/main/src/assets/LOGOTDQ.png)](http://thediscussingquiz.herokuapp.com/)
 
 ---
-### LADDA NER REPO
+### DOWNLOAD REPO
 > FRONTEND:
 > https://github.com/nataliaermeryd/thediscussingquiz
 >
@@ -11,22 +11,55 @@
 ---
 > ÖPPNA TERMINALEN
 >
-> För att ladda ner alla dependencies - KÖR:
+> For installing all dependencies - RUN:
 ```sh
 npm i
 ```
-> För att starta applikationen - KÖR:
+> To run the application - RUN:
 ```sh
 npm start
 ```
 ---
 # ONBOARDING
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+    </li>
+  </ol>
+</details>
+
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+We are building a interactive web application for people who love discussing and quizing. All in one application! 
+
+The app has a duality to be able to choose if you either want to start a forum thread to discuss different topics, or just start a quiz game with your friends. Its a good platform for learning and socializing. 
+
+
+### Built With
+
+* [![React][React.js]][React-url] For Framework in Javascript.
+* [![Nodejs][node.js]][Nodejs-url]Framwork for Javascript.
+* [![Tailwind][Tailwind.css]][Tailwind-url]Framwork for css.
+
+
 | Frameworks | Links |
 | ------ | ------ |
 | Github Repo | [FRONTEND - Repository theDiscussingQuiz](https://github.com/nataliaermeryd/thediscussingquiz/) |
 | GitHub Repo | [BACKEND - Repository gruppsarbete-backend](https://github.com/sararazm/gruppsarbete-backend/) |
 | Trello Agile/Scrum | [Trello Board SPERN](https://trello.com/b/Dc9IJTCG/grupp-1-spern) |
-| framework | [link]() |
+| Heroku | [https://thediscussingquiz.herokuapp.com/](theDiscussingQuiz) |
 | framework | [link]() |
 | framework | [link]() |
 ---
