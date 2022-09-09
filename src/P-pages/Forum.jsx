@@ -33,10 +33,20 @@ export function ShowForumposts() {
 
   return (
       
-    <section id="handleMiddle"
-      class=' items-center w-full '>
+    <section 
+      class=' items-center w-full pt-[110px]'>
+              <p
+          class='fixed text-left
+          font-bold text-gray-400 text-[24px]
+          cursor-pointer pl-2
+          hover:text-[26px] hover:text-gray-300'
+          type='click'
+          onClick={ navigateBack }
+        >
+          ⟪
+          </p>
       <div
-        class='grid-cols w-full items-center'>
+        class='grid-cols w-full m-auto items-center max-w-[1200px]'>
           
           <div
             className="posts"
@@ -44,16 +54,6 @@ export function ShowForumposts() {
              w-full 
             text-center pb-20
             ">
-        <p
-          class='fixed text-left
-          font-bold text-gray-400 text-[24px]
-          cursor-pointer p-2
-          hover:text-[26px] hover:text-gray-300'
-          type='click'
-          onClick={ navigateBack }
-        >
-          ⟪
-          </p>
            <hr class="pt-5 pb-5"/>
           <h3 id="textShadow"
             class="font-bold text-white text-xl">DISCUSSIONS</h3>

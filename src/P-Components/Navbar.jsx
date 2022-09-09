@@ -13,9 +13,9 @@ const Navbar = () => {
 
   return (
     <header>
-      <div className="navbar bg-white pl-1 pr-3 border-t border-b border-dashed border-gray-300 shadow">
+      <div className="navbar bg-white p-1 pl-3 pr-3  border-t border-b border-dashed border-gray-300 shadow">
         <Link to="/" class="cursor-pointer">
-          <img src={Logo} style={{ height: 70 }} alt="logo" />
+          <img src={Logo} style={{ height: 85 }} alt="logo" />
         </Link>
         <nav>
         <div className="users ">

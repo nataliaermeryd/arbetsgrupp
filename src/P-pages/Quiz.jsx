@@ -7,7 +7,7 @@ const Quiz = () => {
 
 return (   
   
-<section id="handleMiddle" className="quizPage">
+<section className="quizPage pt-[90px]">
         <p
           class='absolute text-left pl-3 pt-2
           font-bold text-gray-400 text-[24px]

@@ -37,7 +37,6 @@ a{
   cursor: pointer!important;
   text-decoration: none;
   font-weight: bolder;
-  color: rgb(28, 25, 48);
 }
 
 button {
@@ -99,8 +98,9 @@ button {
 }
 
 .userstate{
-  display: flex;
-  justify-content: flex-end;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 FORUM 
@@ -141,8 +141,3 @@ align-items: center;
 text-shadow: 1px 1px 3px #00000034;
 }
 
-#handleMiddle {
-height: 96vh;
-padding-top: 70px;
-padding-bottom: 70px;
-}

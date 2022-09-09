@@ -23,8 +23,7 @@ const SignIn = () => {
   return (
 
     <section
-      id="handleMiddle"
-      class='sticky top-0 left-0 right-0 bottom-0 flex items-center w-full h-full p-4 bg-coolGray-800 bg-opacity-80'>
+      class='sticky top-0 left-0 right-0 bottom-0 flex items-center w-full h-full p-4 pt-[110px] bg-coolGray-800 bg-opacity-80'>
       <div class='max-w-lg w-full m-auto p-8 bg-white rounded-3xl border-2 border-dashed gray-200'>
 
         <p

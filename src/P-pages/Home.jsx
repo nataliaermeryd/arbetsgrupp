@@ -3,18 +3,19 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     
-    <section class='sticky top-0 left-0 right-0 bottom-0 flex items-center m-auto w-full p-4 bg-coolGray-800 bg-opacity-80'>
+    <section class='sticky flex items-center m-auto w-full p-4 pt-[110px] bg-coolGray-800 bg-opacity-80'>
       <div
-        id="handleMiddle"
-        class='grid grid-cols-1 sm:grid-cols-2 gap-4 w-full m-auto items-center'>
+        class='grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-[1200px] m-auto items-center'>
 
         <Link to="/Signin">
           <div
             class='
             group
-            bg-white bg-opacity-60 w-full pt-60 pb-60 p-10 
+            bg-white bg-opacity-60 w-full 
+            sm:pt-60 sm:pb-60 sm:p-10 
             border-gray-200 border-dashed rounded-3xl border-2
             shadow
+            pt-[15%] pb-[15%] p-[5%]
             '>
             <h3
               class='
@@ -26,7 +27,7 @@ const Home = () => {
             <hr />
               <h2
               class='
-              text-center text-transparent text-5xl bg-clip-text 
+              text-center text-transparent text-4xl bg-clip-text 
               bg-gradient-to-r from-purple-100 to-blue-600
               group-hover:from-blue-600 
               group-hover:to-purple-100
@@ -40,9 +41,10 @@ const Home = () => {
           <div
             class='
             group
-            bg-white bg-opacity-60 w-full pt-60 pb-60
-            border-gray-200 border-2 rounded-3xl border-dashed p-8
+            bg-white bg-opacity-60 w-full sm:pt-60 sm:pb-60 sm:p-8
+            border-gray-200 border-2 rounded-3xl border-dashed 
             shadow
+            pt-[15%] pb-[15%] p-[5%]
             '>
             <h3
               class='
@@ -54,7 +56,7 @@ const Home = () => {
           <hr />
             <h2
               class='
-              text-center text-transparent text-5xl bg-clip-text 
+              text-center text-transparent text-4xl bg-clip-text 
               bg-gradient-to-r from-red-500 to-pink-100
               group-hover:from-pink-100 
               group-hover:to-red-500
