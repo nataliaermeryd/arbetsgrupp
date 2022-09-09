@@ -49,7 +49,13 @@ The app has a duality to be able to choose if you either want to start a forum t
 
 ### Built With
 
-!\[my badge\](https://badgen.net/badge/hello/world/red?icon=react)
+React
+Nodejs
+Express
+MongoDB
+Docker
+Firebase
+Swagger
 
 
 | Frameworks | Links |
