@@ -9,7 +9,7 @@
 > BACKEND:
 > https://github.com/sararazm/gruppsarbete-backend
 ---
-> ÖPPNA TERMINALEN
+> OPEN TERMINAL
 >
 > For installing all dependencies - RUN:
 ```sh
@@ -27,13 +27,13 @@ npm start
   <summary>Table of Contents</summary>
   <ol>
     <li>
+      <a href="#TTFHW">Getting Started</a>
+    </li>
+    <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
     </li>
   </ol>
 </details>
@@ -49,6 +49,7 @@ The app has a duality to be able to choose if you either want to start a forum t
 
 ### Built With
 
+!\[![React][React.js]\]([React-url])
 * [![React][React.js]][React-url] For Framework in Javascript.
 * [![Nodejs][node.js]][Nodejs-url]Framwork for Javascript.
 * [![Tailwind][Tailwind.css]][Tailwind-url]Framwork for css.
