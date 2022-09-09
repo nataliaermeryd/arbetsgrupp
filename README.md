@@ -49,10 +49,7 @@ The app has a duality to be able to choose if you either want to start a forum t
 
 ### Built With
 
-!\[![React][React.js]\]([React-url])
-* [![React][React.js]][React-url] For Framework in Javascript.
-* [![Nodejs][node.js]][Nodejs-url]Framwork for Javascript.
-* [![Tailwind][Tailwind.css]][Tailwind-url]Framwork for css.
+!\[my badge\](https://badgen.net/badge/hello/world/red?icon=react)
 
 
 | Frameworks | Links |
