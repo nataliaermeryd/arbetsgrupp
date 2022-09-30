@@ -32,31 +32,29 @@ export function ShowForumposts() {
   };
 
   return (
-      
-    <section 
-      class=' items-center w-full pt-[110px]'>
-              <p
-          class='fixed text-left
+    <section class=" items-center w-full pt-[110px]">
+      <paragraph
+        class="fixed text-left
           font-bold text-gray-400 text-[24px]
           cursor-pointer pl-2
-          hover:text-[26px] hover:text-gray-300'
-          type='click'
-          onClick={ navigateBack }
-        >
-          ⟪
-          </p>
-      <div
-        class='grid-cols w-full m-auto items-center max-w-[1200px]'>
-          
-          <div
-            className="posts"
-            class="
+          hover:text-[26px] hover:text-gray-300"
+        type="click"
+        onClick={navigateBack}
+      >
+        ⟪
+      </paragraph>
+      <div class="grid-cols w-full m-auto items-center max-w-[1200px]">
+        <div
+          className="posts"
+          class="
              w-full 
             text-center pb-20
-            ">
-           <hr class="pt-5 pb-5"/>
-          <h3 id="textShadow"
-            class="font-bold text-white text-xl">DISCUSSIONS</h3>
+            "
+        >
+          <hr class="pt-5 pb-5" />
+          <h3 id="textShadow" class="font-bold text-white text-xl">
+            DISCUSSIONS
+          </h3>
           <ul class="pb-5">
             {forumposts.map((forumpost) => (
               <PostDetails
@@ -66,13 +64,12 @@ export function ShowForumposts() {
               />
             ))}
           </ul>
-          <hr class="pb-5"/>
+          <hr class="pb-5" />
           <CreateForumpost />
-          <hr class="pt-5"/>
+          <hr class="pt-5" />
         </div>
-    
-        </div>
-      </section>
+      </div>
+    </section>
   );
 }
 
