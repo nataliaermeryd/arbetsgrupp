@@ -4,10 +4,9 @@ import PostDetails from "../P-Components/PostDetails";
 import CreateForumpost from "../P-Components/ForumForm";
 import { useNavigateBack } from "../P-Hooks/useNavigateBack";
 
-
 export function ShowForumposts() {
   axios.defaults.baseURL = "http://localhost:3030/api";
- 
+
   const { navigateBack } = useNavigateBack();
 
   const [forumposts, setForumposts] = useState([]);
@@ -33,14 +32,10 @@ export function ShowForumposts() {
     });
   };
 */
- 
+
   return (
     <section class=" items-center w-full pt-[110px]">
-<<<<<<< HEAD
-      <p
-=======
       <paragraph
->>>>>>> TestN
         class="fixed text-left
           font-bold text-gray-400 text-[24px]
           cursor-pointer pl-2
@@ -49,11 +44,8 @@ export function ShowForumposts() {
         onClick={navigateBack}
       >
         ⟪
-<<<<<<< HEAD
-      </p>
-=======
       </paragraph>
->>>>>>> TestN
+
       <div class="grid-cols w-full m-auto items-center max-w-[1200px]">
         <div
           className="posts"
@@ -68,10 +60,7 @@ export function ShowForumposts() {
           </h3>
           <ul class="pb-5">
             {forumposts.map((forumpost) => (
-              <PostDetails
-                key={forumpost._id}
-                forumpost={forumpost}
-              />
+              <PostDetails key={forumpost._id} forumpost={forumpost} />
             ))}
           </ul>
           <hr class="pb-5" />
