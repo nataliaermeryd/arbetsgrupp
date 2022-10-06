@@ -54,7 +54,7 @@ const SignIn = () => {
                 class='border p-2 rounded-xl text-center'
                 type="email"
                 placeholder="YOUR EMAIL"
-                autocomplete='off'
+                autoComplete='off'
               
                 onChange={(e) => setEmail(e.target.value)}
                 value={email}
@@ -67,7 +67,7 @@ const SignIn = () => {
               class='border p-2 rounded-xl text-center'
               type="password"
               placeholder='PASSWORD'
-              autocomplete='off'
+              autoComplete='off'
 
               onChange={(e) => setPassword(e.target.value)}
               value={password}
