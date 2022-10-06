@@ -35,22 +35,22 @@ export default function Footer() {
         "
       >
         <li>
-          <a href="#" class="mr-4 hover:text-[15px] md:mr-6 ">
+          <a href="https://github.com/nataliaermeryd/thediscussingquiz" class="mr-4 hover:text-[15px] md:mr-6 ">
             LINK
           </a>
         </li>
         <li>
-          <a href="#" class="mr-4 hover:text-[15px] md:mr-6">
+          <a href="https://github.com/Petra-Johansson/DiscussingQuiz" class="mr-4 hover:text-[15px] md:mr-6">
             LOREM
           </a>
         </li>
         <li>
-          <a href="#" class="mr-4 hover:text-[15px] md:mr-6">
+          <a href="https://github.com/nataliaermeryd/thediscussingquiz" class="mr-4 hover:text-[15px] md:mr-6">
             LINK
           </a>
         </li>
         <li>
-          <a href="#" class="hover:text-[15px]">
+          <a href="https://github.com/Petra-Johansson/DiscussingQuiz" class="hover:text-[15px]">
             LOREM
           </a>
         </li>

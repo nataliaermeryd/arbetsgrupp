@@ -18,11 +18,11 @@ const Navbar = () => {
           <img src={Logo} style={{ height: 85 }} alt="logo" />
         </Link>
         <nav>
-        <div className="users ">
+        <div className="userstate ">
             {user && ( 
           
-          <div className="userstate ">
-            <span className="user-details">{ user.email }</span>  
+          <div>
+            <span className="user-details">This is users email: { user.email }</span>  
                 <button
                   className="logout"
                   class=" 
