@@ -36,7 +36,11 @@ export function ShowForumposts() {
  
   return (
     <section class=" items-center w-full pt-[110px]">
+<<<<<<< HEAD
       <p
+=======
+      <paragraph
+>>>>>>> TestN
         class="fixed text-left
           font-bold text-gray-400 text-[24px]
           cursor-pointer pl-2
@@ -45,7 +49,11 @@ export function ShowForumposts() {
         onClick={navigateBack}
       >
         ⟪
+<<<<<<< HEAD
       </p>
+=======
+      </paragraph>
+>>>>>>> TestN
       <div class="grid-cols w-full m-auto items-center max-w-[1200px]">
         <div
           className="posts"

@@ -1,15 +1,15 @@
 import { Link } from "react-router-dom";
 import { useLogOut } from "../P-Hooks/useLogOut";
 import { useAuthContext } from "../P-Hooks/useAuthContext";
-import Logo from "../assets/LOGOTDQ.png";
+import Logo from "../assets/LogoTdq.png";
 
 const Navbar = () => {
   const { logout } = useLogOut();
   const { user } = useAuthContext();
 
   const handleLogOut = () => {
-    logout()
-  }
+    logout();
+  };
 
   return (
     <header>
@@ -18,11 +18,18 @@ const Navbar = () => {
           <img src={Logo} style={{ height: 85 }} alt="logo" />
         </Link>
         <nav>
+<<<<<<< HEAD
         <div className="userstate ">
             {user && ( 
           
           <div>
             <span className="user-details">This is users email: { user.email }</span>  
+=======
+          <div className="users ">
+            {user && (
+              <div className="userstate ">
+                <span className="user-details">{user.email}</span>
+>>>>>>> TestN
                 <button
                   className="logout"
                   class=" 
@@ -30,14 +37,14 @@ const Navbar = () => {
                   text-center text-transparent bg-clip-text 
                   bg-gradient-to-r from-red-500 to-pink-100
                   hover:from-pink-100 hover:to-red-500 hover:text-[18px]"
-                  onClick={handleLogOut}>
+                  onClick={handleLogOut}
+                >
                   SIGN OUT ⟫
-                  </button>
+                </button>
               </div>
-              
-          )}
-          {!user && ( 
-          <Link to="/signin" class="cursor-pointer">
+            )}
+            {!user && (
+              <Link to="/signin" class="cursor-pointer">
                 <h1
                   class="
                   text-[17px] text-transparent bg-clip-text 
@@ -46,9 +53,9 @@ const Navbar = () => {
                 >
                   SIGN IN ⟫
                 </h1>
-          </Link>
-          )}
-        </div>
+              </Link>
+            )}
+          </div>
         </nav>
       </div>
     </header>
