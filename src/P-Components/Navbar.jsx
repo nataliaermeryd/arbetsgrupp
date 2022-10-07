@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useLogOut } from "../P-Hooks/useLogOut";
 import { useAuthContext } from "../P-Hooks/useAuthContext";
-//import Logo from "../assets/LogoTdq.png";
+import Logo from "../assets/LogoTdq.png";
 
 const Navbar = () => {
   const { logout } = useLogOut();
@@ -14,7 +14,9 @@ const Navbar = () => {
   return (
     <header>
       <div className="navbar bg-white p-1 pl-3 pr-3  border-t border-b border-dashed border-gray-300 shadow">
-        <Link to="/" class="cursor-pointer"></Link>
+        <Link to="/" class="cursor-pointer">
+          <img src={Logo} style={{ height: 85 }} alt="logo" />
+        </Link>
         <nav>
           <div className="users ">
             {user && (
