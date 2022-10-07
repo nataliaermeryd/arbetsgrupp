@@ -6,16 +6,18 @@ export const useLogIn = () => {
   const [loading, setLoading] = useState(null);
   const { dispatch } = useAuthContext();
 
-
   const logIn = async (email, password) => {
     setLoading(true);
     setError(null);
 
-    const response = await fetch("http://localhost:3030/api/user/signin", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email, password }),
-    });
+    const response = await fetch(
+      "https://discussing-quiz.herokuapp.com/api/user/signin",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, password }),
+      }
+    );
 
     const json = await response.json();
 
@@ -24,13 +26,12 @@ export const useLogIn = () => {
       setError(json.error);
     }
     if (response.ok) {
-        localStorage.setItem('user', JSON.stringify(json))
+      localStorage.setItem("user", JSON.stringify(json));
 
-        dispatch({type:'LOGIN', payload: json})
-        setLoading(false);
-
+      dispatch({ type: "LOGIN", payload: json });
+      setLoading(false);
     }
   };
 
-  return  {logIn, loading, error }
+  return { logIn, loading, error };
 };

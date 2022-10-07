@@ -5,7 +5,7 @@ import CreateForumpost from "../P-Components/ForumForm";
 import { useNavigateBack } from "../P-Hooks/useNavigateBack";
 
 export function ShowForumposts() {
-  axios.defaults.baseURL = "http://localhost:3030/api";
+  axios.defaults.baseURL = "https://discussing-quiz.herokuapp.com/api";
 
   const { navigateBack } = useNavigateBack();
 
@@ -25,7 +25,7 @@ export function ShowForumposts() {
 
   /*
   const deletePost = (e) => {
-    axios.delete(`http://localhost:3030/api/forum/${e.target.name}`);
+    axios.delete(`https://discussing-quiz.herokuapp.com/api/forum/${e.target.name}`);
 
     setForumposts((data) => {
       return data.filter((forumpost) => forumpost._id !== e.target.name);

@@ -21,14 +21,17 @@ const CreateForumpost = () => {
 
     const forumpost = { title, text };
 
-    const response = await fetch("http://localhost:3030/api/forum/newpost", {
-      method: "POST",
-      body: JSON.stringify(forumpost),
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${user.token}`,
-      },
-    });
+    const response = await fetch(
+      "https://discussing-quiz.herokuapp.com/api/forum/newpost",
+      {
+        method: "POST",
+        body: JSON.stringify(forumpost),
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${user.token}`,
+        },
+      }
+    );
 
     console.log(response);
     const json = await response.json();
