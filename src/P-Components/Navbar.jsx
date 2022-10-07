@@ -44,7 +44,7 @@ const Navbar = () => {
                   bg-gradient-to-r from-blue-600 to-purple-200
                   hover:from-purple-200 hover:to-blue-600 hover:text-[18px]"
                 >
-                  SIGN IN ⟫
+                  SIGN IN ⟫ 
                 </h1>
               </Link>
             )}
