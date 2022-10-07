@@ -1,5 +1,4 @@
 {
-  "proxy": "https://discussing-quiz.herokuapp.com/",
   "name": "quiz-app",
   "version": "0.1.0",
   "private": true,
@@ -16,11 +15,12 @@
     "react-navbar": "^3.0.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "webpack": "^5.74.0"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "webpack --config prod.config.js",
     "test": "jest",
     "eject": "react-scripts eject"
   },
